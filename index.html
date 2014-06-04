@@ -1,0 +1,267 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<!--@uthors By Gabrijel Kos, x09102434-->
+		<title>IISL | Home</title>
+		<link href="css/style.css" rel="stylesheet" type="text/css"  media="all" />
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="css/superfish.css" media="screen">
+		<!--CSS Start-->
+		<link href="css/camera.css" rel="stylesheet" type="text/css" media="all" />
+		<!--CSS End-->
+		<script src="js/jquery.js"></script>
+		<script src="js/superfish.js"></script>
+		<script type="text/javascript" src="js/move-top.js"></script>
+		<script type="text/javascript" src="js/easing.js"></script>
+		<!--jQuery Start-->
+		<script>
+			(function($){ //To create closure and use alias for jQuery
+				$(document).ready(function(){
+					//This is initialise plug in
+					var example = $('#example').superfish({
+					//Add options here if it is required
+					});
+					//Buttons to demonstrate public methods
+					$('.destroy').on('click', function(){
+						example.superfish('destroy');
+					});
+					$('.init').on('click', function(){
+						example.superfish();
+					});
+					$('.open').on('click', function(){
+						example.children('li:first').superfish('show');
+					});
+					$('.close').on('click', function(){
+						example.children('li:first').superfish('hide');
+					});
+				});
+			})(jQuery);
+		</script>
+		<script>
+			jQuery(function(){
+				jQuery('#camera_wrap_1').camera({
+					height: '500',
+					pagination: false,
+					thumbnails: false,
+					imagePath: '../images/'
+				});
+
+			});
+		</script>
+		<!--jQuery End-->
+	</head>
+	<body>
+		<!--Wrap Start-->
+		<div class="wrap">
+			<!--Header Start-->
+			<div class="header">
+				<div class="logo">
+					<a href="index.html"><img src="images/logo.png" title="Infant Irish Sign Language" /></a>
+				</div>
+				<div class="clear"> </div>
+			</div>
+			<!--Header End-->
+			<div class="clear"> </div>
+			<!--Links Start-->
+			<div class="top-nav">
+				<ul class="sf-menu sf-menu2" id="example">
+					<li class="active">
+						<a href="index.html">Home</a>
+					</li>
+					<li class="active">
+						<a href="about.html">About</a>
+					</li>
+					<li>
+						<a href="gallery.html">Alphabet</a>
+					</li>
+					<li>
+						<a href="video.html">Tutorial</a>
+					</li>
+					<li>
+						<a href="gal3.html#cat3">Convert</a>
+					</li>
+					<li>
+						<a href="contact.html">Contact</a>
+					</li>	
+					<div class="clear"> </div>
+				</ul>
+			</div>
+			<!--Links End-->
+			<div class="clear"> </div>
+		</div>
+		<!--Wrap End-->
+		<div class="clear"> </div>
+		<!--Image Sliders Start-->
+		<div class="slider">
+			<!--Wrap Start-->
+			<div class="wrap">
+				<div class="fluid_container">
+					<div class="camera_wrap camera_azure_skin" id="camera_wrap_1">
+						<div data-thumb="images/slider3.png" data-src="images/slider3.png">
+							<div class="camera_caption fadeFromBottom">
+								<!--<h3>Welcome to Infant Irish Sign Language</h3>-->
+							</div>
+						</div>
+						<div data-thumb="images/slider1.png" data-src="images/slider1.png">
+							<div class="camera_caption fadeFromBottom">
+								<h3>Welcome to Infant Irish Sign Language</h3>
+								<p>Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text,</p>
+							</div>
+						</div>
+						<div data-thumb="images/slider2.png" data-src="images/slider2.png">
+							<div class="camera_caption fadeFromBottom">
+								<h3> Test text Test text Test text,</h3>
+								<p>Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text,</p>
+							</div>
+						</div>
+						<div data-thumb="images/slider3.png" data-src="images/slider3.png">
+							<div class="camera_caption fadeFromBottom">
+								<h3> Test text Test text Test text,</h3>
+								<p>Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text,</p>
+							</div>
+						</div>
+					</div>
+					<!--Camera Wrap Start-->
+					<script type='text/javascript' src='js/jquery.min.js'></script>
+					<script type='text/javascript' src='js/jquery.mobile.customized.min.js'></script>
+					<script type='text/javascript' src='js/jquery.easing.1.3.js'></script> 
+					<script type='text/javascript' src='js/camera.min.js'></script> 
+					<!--Camera Wrap End-->
+				</div>
+				<div class="clear"> </div>
+				<div class="shadow">
+					<img src="images/shadow.png" alt="Infant Irish Sign Language" />
+				</div>
+			</div>
+			<!--Wrap End-->
+			<!--Start Body Page-->	
+			<div class="content">
+				<div class="about">
+					<!--Start Wrap-->
+					<div class="wrap">
+						<div class="about-grids">
+							<div class="about-grid">
+								<h3>Test test</h3>
+								<a href="#"><img src="images/slider1.jpg" title="about"></a>
+								<span>Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text.</span>
+								<p>Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test textTest text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test textTest text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test Test text Test text Test text Test text Test text Test text Test text.</p>
+							</div>
+							<div class="about-grid center-grid1">
+								<h3>Test test?</h3>
+								<p>Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text</p>
+								<label>Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text</label>
+								<p>Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test textTest text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text,</p>
+								<label>Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text</label>
+								<p>Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test textTest text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text,</p>
+							</div>
+							<div class="about-grid last-grid1">
+								<h3>Test test</h3>
+								<div class="about-team">
+									<div class="client">
+										<div class="about-team-left">
+											<a href="#"><img src="images/c1.jpg" title="client-name"></a>
+										</div>
+										<div class="about-team-right">
+											<p>Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text.</p>
+										</div>
+										<div class="clear"> </div>
+									</div>
+									<div class="client">
+										<div class="about-team-left">
+											<a href="#"><img src="images/c2.jpg" title="client-name"></a>
+										</div>
+										<div class="about-team-right">
+											<p>Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text.</p>
+										</div>
+										<div class="clear"> </div>
+									</div>
+									<div class="client">
+										<div class="about-team-left">
+											<a href="#"><img src="images/c1.jpg" title="client-name"></a>
+										</div>
+										<div class="about-team-right">
+											<p>Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text.</p>
+										</div>
+										<div class="clear"> </div>
+									</div>
+									<div class="client">
+										<div class="about-team-left">
+											<a href="#"><img src="images/c2.jpg" title="client-name"></a>
+										</div>
+										<div class="about-team-right">
+											<p>Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text.</p>
+										</div>
+										<div class="clear"> </div>
+									</div>
+								</div>
+							</div>
+							<div class="clear"> </div>
+						</div>
+					</div><br />
+					<!--Wrap End-->
+					<div class="ourteam">
+						<!--Wrap Start-->
+						<div class="wrap">
+							<h3>Our<span> team</span></h3>
+							<div class="section group">
+								<div class="grid_1_of_4 images_1_of_4">
+									 <img src="images/team.jpg">
+									 <h4>Test text Test text Test </h4>
+									 <p>Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test textTest text Test text Test text Test text Test text Test text.<!--<a href="#">[...]</a>--></p>
+								</div>
+								<div class="grid_1_of_4 images_1_of_4">
+									 <img src="images/team.jpg">
+									 <h4>Test text Test text Test </h4>
+									 <p>Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test textTest text Test text Test text Test text Test text Test text.<!--<a href="#">[...]</a>--></p>
+								</div>
+								<div class="grid_1_of_4 images_1_of_4">
+									 <img src="images/team.jpg">
+									 <h4>Test text Test text Test </h4>
+									 <p>Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test textTest text Test text Test text Test text Test text Test text.<!--<a href="#">[...]</a>--></p>
+								</div>
+								<div class="grid_1_of_4 images_1_of_4">
+									 <img src="images/team.jpg">
+									 <h4>Test text Test text Test </h4>
+									 <p>Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test textTest text Test text Test text Test text Test text Test text.<!--<a href="#">[...]</a>--></p>
+								</div>
+							</div>
+						</div>	
+						<!--Wrap End-->
+					</div>
+				</div>
+			</div>
+			<!--Body Page End-->
+		</div>
+		<!--Image Sliders End-->
+		<!--Footer Page Start-->
+		<div class="footer">
+			<!--Wrap Start-->
+			<div class="wrap">
+				<div class="footer-left">
+					<a href="index.html">IISL</a>
+				</div>
+				<div class="footer-right">
+					<p>Design by <a href="http://www.linkedin.com/pub/gabrijel-kos/43/3b/105">Gabrijel Kos X09102434</a></p>
+					<script type="text/javascript">
+							$(document).ready(function() {
+								/*
+								var defaults = {
+									containerID: 'toTop', // fading element id
+									containerHoverID: 'toTopHover', // fading element hover id
+									scrollSpeed: 1200,
+									easingType: 'linear' 
+								};
+								*/
+								$().UItoTop({ easingType: 'easeOutQuart' });
+							});
+					</script>
+					<a href="#" id="toTop" style="display: block;"><span id="toTopHover" style="opacity: 1;"></span></a>
+				</div>
+				<div class="clear"> </div>
+			</div>
+			<!--Wrap End-->
+		</div>
+		<!--Footer Page End-->
+	</body>
+</html>
+

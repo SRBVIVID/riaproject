@@ -1,0 +1,75 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+
+<head>
+
+<title></title>
+
+	<script type="text/javascript" src="jQuery.js"></script>
+	<script type="text/javascript">
+
+		function slideSwitch() {
+			var $active = $('#slideshow IMG.active');
+
+			if ( $active.length == 0 ) $active = $('#slideshow IMG:last');
+			var $next =  $active.next().length ? $active.next()
+				: $('#slideshow IMG:first');
+
+			$active.addClass('last-active');
+			$next.css({opacity: 0.0})
+				.addClass('active')
+				.animate({opacity: 5.0}, 900, function() {
+				$active.removeClass('active last-active');
+				$active.hide();   
+				});
+		}
+
+		$(function() {
+			setInterval( "slideSwitch()", 1000 );
+		});
+
+	</script>
+	
+	<style type="text/css">
+		html {height:100%; }
+		body {height:100%; width:100%; margin:0; padding:0; background: #0D5BA5 url(images/stuff-we-like1.png) top center no-repeat;}
+		#slideshow {position: absolute; top: 160px; margin-left: 850px;}
+		#slideshow IMG {position:absolute; top:0; left:0; opacity:0.0;}
+		#slideshow IMG.active {opacity:1.0;}
+	</style>
+		
+</head>
+
+<body>	
+		
+	<div id="slideshow">
+		<img src="images/a.png" alt="Slideshow Image 1" /> <!--class="active" -->
+		<img src="images/b.png" alt="Slideshow Image 2" />
+		<img src="images/c.png" alt="Slideshow Image 3" />
+		<img src="images/d.png" alt="Slideshow Image 4" />
+		<img src="images/e.png" alt="Slideshow Image 5" />
+		<img src="images/f.png" alt="Slideshow Image 6" />
+		<img src="images/g.png" alt="Slideshow Image 7" />
+		<img src="images/h.png" alt="Slideshow Image 8" />
+		<img src="images/i.png" alt="Slideshow Image 9" />
+		<img src="images/j.png" alt="Slideshow Image 10" />
+		<img src="images/k.png" alt="Slideshow Image 11" />
+		<img src="images/l.png" alt="Slideshow Image 12" />
+		<img src="images/m.png" alt="Slideshow Image 13" />
+		<img src="images/n.png" alt="Slideshow Image 14" />
+		<img src="images/o.png" alt="Slideshow Image 15" />
+		<img src="images/p.png" alt="Slideshow Image 16" />
+		<img src="images/q.png" alt="Slideshow Image 17" />
+		<img src="images/r.png" alt="Slideshow Image 18" />
+		<img src="images/s.png" alt="Slideshow Image 19" />
+		<img src="images/t.png" alt="Slideshow Image 20" />
+		<img src="images/u.png" alt="Slideshow Image 21" />
+		<img src="images/v.png" alt="Slideshow Image 22" />
+		<img src="images/w.png" alt="Slideshow Image 23" />
+		<img src="images/x.png" alt="Slideshow Image 24" />
+		<img src="images/y.png" alt="Slideshow Image 25" />
+		<img src="images/z.png" alt="Slideshow Image 26" />
+	</div>
+		
+</body>
+</html>

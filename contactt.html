@@ -1,0 +1,232 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>IISL | Contact</title>
+		<link href="css/style.css" rel="stylesheet" type="text/css"  media="all" />
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="css/superfish.css" media="screen">
+		<script src="js/jquery.js"></script>
+		<script src="js/superfish.js"></script>
+		<script type="text/javascript" src="js/move-top.js"></script>
+		<script type="text/javascript" src="js/easing.js"></script>
+		<script>
+		(function($){ //create closure so we can safely use $ as alias for jQuery
+			$(document).ready(function(){
+				// initialise plugin
+				var example = $('#example').superfish({
+					//add options here if required
+				});
+				// buttons to demonstrate Superfish's public methods
+				$('.destroy').on('click', function(){
+					example.superfish('destroy');
+				});
+				$('.init').on('click', function(){
+					example.superfish();
+				});
+				$('.open').on('click', function(){
+					example.children('li:first').superfish('show');
+				});
+				$('.close').on('click', function(){
+					example.children('li:first').superfish('hide');
+				});
+			});
+		})(jQuery);
+		</script>
+	</head>
+	<body>
+		<!---start-wrap---->
+		<div class="wrap">
+			<!---start-header---->
+			<div class="header">
+				<div class="logo">
+					<a href="index.html"><img src="images/logo.png" title="naturex" /></a>
+				</div>
+			
+				<div class="clear"> </div>
+			</div>
+			<div class="clear"> </div>
+			<!---End-header---->
+			<!---start-top-nav---->
+			<div class="top-nav">
+						<ul class="sf-menu sf-menu2" id="example">
+						<li class="active">
+							<a href="index.html">Home</a>
+						</li>
+						<li class="active">
+							<a href="about.html">About</a>
+						</li>
+						<li>
+							<a href="gallery.html">Gallery</a>
+						</li>
+						<li>
+							<a href="index.html#cat1">Video</a>
+						</li>
+						<li>
+							<a href="gal3.html#cat3">Convert</a>
+						</li>
+						<li>
+							<a href="contact.html">Contact</a>
+						</li>	
+					</div>
+					<div class="clear"> </div>
+				</div>
+				<!---End-header---->
+			</div>
+			<!---start-content----->
+			<div class="content">
+				<!---start-Contact----->
+				<div class="contact">
+					<div class="wrap">
+					<h1>Contact<span>us</span></h1>
+				<div class="section group">				
+				<div class="col span_1_of_3">
+					
+      			<div class="company_address">
+				     	<h3>GET IN TOUCH :</h3>
+						    	<p>Deaf Village Ireland,</p>
+						   		<p>Ratoath Road, Cabra,</p>
+						   		<p>Dublin 7,Republic of Ireland.</p>
+				   		<p>Text: +353 87 990 5223</p>
+				   		<p>Tel: +353 1549 0812</p>
+				 	 	<p>Email: <span>info@deafvillageireland.ie</span></p>
+				   		<p>Follow on: <span>Facebook</span>, <span>Twitter</span></p>
+				   </div>
+				<body onload="LoadGmaps()" onunload="GUnload()">
+<!-- Maps DIV : you can move the code below to where you want the maps to be displayed -->
+<div id="MyGmaps" style="width:400px;height:300px;border:1px solid #CECECE;"></div>
+<!-- End of Maps DIV -->
+</body>
+				</div>				
+				<div class="col span_2_of_3">
+				  <div class="contact-form">
+				  	<h3>Contact Us</h3>
+					    <form>
+					    	<div>
+						    	<span><label>NAME</label></span>
+						    	<span><input name="userName" type="text" class="textbox"></span>
+						    </div>
+						    <div>
+						    	<span><label>E-MAIL</label></span>
+						    	<span><input name="userEmail" type="text" class="textbox"></span>
+						    </div>
+						    <div>
+						     	<span><label>MOBILE</label></span>
+						    	<span><input name="userPhone" type="text" class="textbox"></span>
+						    </div>
+						    <div>
+						    	<span><label>SUBJECT</label></span>
+						    	<span><textarea name="userMsg"> </textarea></span>
+						    </div>
+						   <div>
+						   		<span><input type="submit" value="Submit"></span>
+						  </div>
+					    </form>
+
+				    </div>
+  				</div>			
+   
+			</div>
+			<!---End-contact----->
+		</div>
+			<!---End-content----->
+		</div>
+		<div class="clear"></div>
+		</div>
+	</div>
+	<div class="clear"></div>
+		<!---start-footer----->
+		<div class="footer">
+			<div class="wrap">
+				<div class="footer-left">
+					<a href="index.html">IISL</a>
+				</div>
+				<div class="footer-right">
+					<p>Design by <a href="http://www.linkedin.com/pub/gabrijel-kos/43/3b/105">Gabrijel Kos X09102434</a></p>
+					<script type="text/javascript">
+							$(document).ready(function() {
+								/*
+								var defaults = {
+						  			containerID: 'toTop', // fading element id
+									containerHoverID: 'toTopHover', // fading element hover id
+									scrollSpeed: 1200,
+									easingType: 'linear' 
+						 		};
+								*/
+								
+								$().UItoTop({ easingType: 'easeOutQuart' });
+								
+							});
+						</script>
+   					 <a href="#" id="toTop" style="display: block;"><span id="toTopHover" style="opacity: 1;"></span></a>
+				</div>
+				<div class="clear"> </div>
+			</div>
+		</div>
+		<!---End-footer----->
+		<!---End-wrap---->
+		<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+<script type="text/javascript">
+		function LoadGmaps() {
+		var myLatlng = new google.maps.LatLng(53.3632162,-6.3029003);
+		var myOptions = {
+			zoom: 16,
+			center: myLatlng,
+			disableDefaultUI: true,
+			panControl: true,
+			zoomControl: true,
+			zoomControlOptions: {
+				style: google.maps.ZoomControlStyle.DEFAULT
+			},
+
+			mapTypeControl: true,
+			mapTypeControlOptions: {
+				style: google.maps.MapTypeControlStyle.HORIZONTAL_BAR
+			},
+			streetViewControl: true,
+			mapTypeId: google.maps.MapTypeId.ROADMAP
+			}
+		var map = new google.maps.Map(document.getElementById("MyGmaps"), myOptions);
+		var marker = new google.maps.Marker({
+			position: myLatlng,
+			map: map,
+			title:"deaf village ireland dublin"
+		});
+	}
+</script>
+<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+<script type="text/javascript">
+<body onload="LoadGmaps()" onunload="GUnload()">
+<!-- Maps DIV : you can move the code below to where you want the maps to be displayed -->
+<div id="map" style="width:600px;height:400px;border:1px solid #CECECE;"></div>
+	</script>
+	<div class="footer">
+			<div class="wrap">
+				<div class="footer-left">
+					<a href="index.html">IISL</a>
+				</div>
+				<div class="footer-right">
+					<p>Design by <a href="http://www.linkedin.com/pub/gabrijel-kos/43/3b/105">Gabrijel Kos X09102434</a></p>
+					<script type="text/javascript">
+							$(document).ready(function() {
+								/*
+								var defaults = {
+						  			containerID: 'toTop', // fading element id
+									containerHoverID: 'toTopHover', // fading element hover id
+									scrollSpeed: 1200,
+									easingType: 'linear' 
+						 		};
+								*/
+								
+								$().UItoTop({ easingType: 'easeOutQuart' });
+								
+							});
+						</script>
+   					 <a href="#" id="toTop" style="display: block;"><span id="toTopHover" style="opacity: 1;"></span></a>
+				</div>
+				<div class="clear"> </div>
+			</div>
+		</div>
+	</body>
+</html>
+
+
